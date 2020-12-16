@@ -1,0 +1,38 @@
+﻿@*COMENTARIOS
+    DE RAZOR*@
+
+DECLARACIÓN DE VARIABLES EN RAZOR:
+@{
+    int numero = 14;
+    String texto = "Soy en texto en RAZOR";
+}
+
+<h1 style="color:red">
+    Su nombre es @ViewData["Nombre"] y su edad es @ViewBag.edad
+</h1>
+
+DIBUJAR VARIABLES
+<h2 style="color:blue">@texto</h2>
+
+CÓDIGO LÓGICO
+@if (numero > 0)
+{
+    //CÓDIGO DE SERVIDOR
+    //EN EL MOMENTO EN QUE INCLUIMOS CARATERES HTML
+    //SE CORTA EL CÓDIGO LÓGICO Y EMPIEA EL DIBUJO
+    <h2>Positivo @numero</h2>
+}
+else
+{
+    <h2>Negativo @numero</h2>
+}
+
+<h1 style="color: fuchsia">
+    Mi Primera vista MVC
+</h1>
+
+@model Persona
+
+<h2 style="background-color: yellow; color: blue">
+    Nombre: @Model.Nombre, Edad: @Model.Edad, Email: @Model.Email
+</h2>
