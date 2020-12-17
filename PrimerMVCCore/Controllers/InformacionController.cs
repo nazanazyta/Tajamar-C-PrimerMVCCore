@@ -9,6 +9,27 @@ namespace PrimerMVCCore.Controllers
 {
     public class InformacionController : Controller
     {
+        //GET VistaPost
+        [HttpGet]
+        public IActionResult VistaPost()
+        {
+            return View();
+        }
+
+        //POST VistaPost
+        [HttpPost]
+        public IActionResult VistaPost(String cajanombre, int cajaedad, String cajaemail)
+        {
+            Persona persona = new Persona();
+            persona.Nombre = cajanombre;
+            persona.Edad = cajaedad;
+            persona.Email = cajaemail;
+            //ViewData["Nombre"] = cajanombre;
+            //ViewData["Edad"] = cajaedad;
+            //ViewData["Email"] = cajaemail;
+            return View(persona);
+        }
+
         //GET VistaDatos
         public IActionResult VistaDatos(String aplicacion, int version)
         {
@@ -20,10 +41,10 @@ namespace PrimerMVCCore.Controllers
         }
 
         //POST
-        public IActionResult VistaPost()
-        {
-            return View();
-        }
+        //public IActionResult VistaPost()
+        //{
+        //    return View();
+        //}
 
         //PARA CAPTURAR LA INFORMACIÓN DE UN FORMULARIO
         //NECESITAMOS UN MÉTODO EXTRA POST
@@ -31,13 +52,13 @@ namespace PrimerMVCCore.Controllers
         //RECIBE LOS PARÁMETROS CON EL MISMO name
         //QUE LAS CAJAS O INPUT
         //PARA QUE SEA FUNCIONAL TIENE QUE TENER [HttpPost]
-        [HttpPost]
-        public IActionResult VistaPost(String cajanombre, String cajaedad)
-        {
-            ViewBag.Nombre = cajanombre;
-            ViewBag.Edad = cajaedad;
-            return View();
-        }
+        //[HttpPost]
+        //public IActionResult VistaPost(String cajanombre, String cajaedad)
+        //{
+        //    ViewBag.Nombre = cajanombre;
+        //    ViewBag.Edad = cajaedad;
+        //    return View();
+        //}
 
         public IActionResult Inicio()
         {

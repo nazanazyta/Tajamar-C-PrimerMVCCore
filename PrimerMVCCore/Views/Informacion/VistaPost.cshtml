@@ -1,12 +1,19 @@
-﻿<h1>Información método POST</h1>
+﻿@model Persona
+<h1>Ejemplo Información POST</h1>
 <form method="post">
     <label>Nombre: </label>
-    <input type="text" name="cajanombre"/><br/>
+    <input type="text" name="cajanombre" class="form-control"/><br/>
     <label>Edad: </label>
-    <input type="text" name="cajaedad"/><br/>
-    <button type="submit" class="btn-success">
-        Enviar información
-    </button>
+    <input type="text" name="cajaedad" class="form-control"/><br/>
+    <lable>Email: </lable>
+    <input type="text" name="cajaemail" class="form-control"/><br/>
+    <button type="submit" class="btn-info">Enviar</button>
 </form>
-<h1>Nombre: @ViewBag.Nombre</h1>
-<h1>Edad: @ViewBag.Edad</h1>
+<hr/>
+<h1 style="color:fuchsia">Persona nombre: @Model.Nombre</h1>
+<h1 style="color:brown">Persona edad: @Model.Edad</h1>
+<h1 style="color:blueviolet">Persona email: @Model.Email</h1>
+<h2>-----------------------------------------------------------</h2>
+<h1 style="color:blue">Nombre: @ViewData["Nombre"]</h1>
+<h1 style="color:red">Edad: @ViewData["edad"]</h1>
+<h1 style="color:green">Email: @ViewData["Email"]</h1>

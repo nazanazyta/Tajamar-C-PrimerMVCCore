@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Nazaret\\source\\repos\\PrimerMVCCore\\PrimerMVCCore\\PrimerMVCCore.csproj",
+      "projectUniqueName": "C:\\Users\\Nazaret\\Repos\\Tajamar-C-PrimerMVCCore\\PrimerMVCCore\\PrimerMVCCore.csproj",
       "projectName": "PrimerMVCCore",
-      "projectPath": "C:\\Users\\Nazaret\\source\\repos\\PrimerMVCCore\\PrimerMVCCore\\PrimerMVCCore.csproj",
+      "projectPath": "C:\\Users\\Nazaret\\Repos\\Tajamar-C-PrimerMVCCore\\PrimerMVCCore\\PrimerMVCCore.csproj",
       "packagesPath": "C:\\Users\\Nazaret\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Nazaret\\source\\repos\\PrimerMVCCore\\PrimerMVCCore\\obj\\",
+      "outputPath": "C:\\Users\\Nazaret\\Repos\\Tajamar-C-PrimerMVCCore\\PrimerMVCCore\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -37,6 +37,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "projectReferences": {}
         }
       },
@@ -48,6 +49,7 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
+        "targetAlias": "netcoreapp3.1",
         "imports": [
           "net461",
           "net462",
@@ -66,7 +68,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   }
